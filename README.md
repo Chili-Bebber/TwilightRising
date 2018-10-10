@@ -3,6 +3,8 @@ Progress: Just started
 
   Base : Started
   
+-----------------------------------------
+  
   Doge : Not Started
   
   Catto: Not Started
@@ -15,12 +17,16 @@ Progress: Just started
   
   Lucas: Not Started
   
+-----------------------------------------
+  
   Textures: Not Started
   
   Compat:   Started
   
   Libs:     Started
+  
+-----------------------------------------
 
-##Things left to do
+#Things left to do
 
 EVERYTHING
