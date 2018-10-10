@@ -8,6 +8,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.config.Configuration;
+import uni.ttf.twilightrising.common.TwilightHelper;
 import uni.ttf.twilightrising.common.misc.TwilightTab;
 import uni.ttf.twilightrising.core.TConfig;
 
@@ -32,15 +33,17 @@ public class TwilightRising {
 	public void preInit(FMLPreInitializationEvent event) {
 		config = new Configuration(event.getSuggestedConfigurationFile());
 		TConfig.loadConfig(config);
+
+		TwilightHelper.preInit();
 	}
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-
+		TwilightHelper.init();
 	}
 
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-
+		TwilightHelper.postInit();
 	}
 }

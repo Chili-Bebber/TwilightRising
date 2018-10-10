@@ -1,11 +1,11 @@
-package uni.ttf.twilightrising.common.doge;
+package uni.ttf.twilightrising.common.lucas;
 
 /**
  * Project: TwilightRising
  * Created by Carbon
  * Copyright (c) Carbon 2018
  */
-public class DogHelper {
+public class BirbHelper {
 	public static void preInit() {
 
 	}
