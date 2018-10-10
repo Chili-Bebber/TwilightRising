@@ -1,11 +1,10 @@
-[16:31:54] [main/INFO]: Setting user: Player144
-[16:31:57] [Client thread/INFO]: LWJGL Version: 2.9.1
-[16:32:13] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Twilight Rising
-[16:32:14] [Sound Library Loader/INFO]: Sound engine started
-[16:32:16] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[16:32:16] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[16:32:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Twilight Rising
-[16:32:17] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:32:17] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[16:32:18] [Sound Library Loader/INFO]: Sound engine started
-[16:32:18] [Client thread/INFO]: Stopping!
+[16:49:01] [main/INFO]: Setting user: Player941
+[16:49:03] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:49:19] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Twilight Rising
+[16:49:20] [Sound Library Loader/INFO]: Sound engine started
+[16:49:21] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[16:49:21] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[16:49:22] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Twilight Rising
+[16:49:22] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[16:49:23] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:49:23] [Sound Library Loader/INFO]: Sound engine started

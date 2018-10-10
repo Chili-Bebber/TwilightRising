@@ -8,12 +8,14 @@ import uni.ttf.twilightrising.TwilightRising;
  * Created by Carbon
  * Copyright (c) Carbon 2018
  */
-public class DebugItem extends Item {
-	public DebugItem() {
-		String unlocalized = "debugItem";
+public class ItemCaneCrystal extends Item {
+	private static final String unlocalized = "caneCrystal";
+
+	public ItemCaneCrystal() {
 		setUnlocalizedName(unlocalized);
 		setTextureName(unlocalized);
-
 		setCreativeTab(TwilightRising.tabTwilight);
 	}
+
+
 }

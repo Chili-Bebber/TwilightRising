@@ -1,6 +1,7 @@
 package uni.ttf.twilightrising.common;
 
 import uni.ttf.twilightrising.common.doge.DogHelper;
+import uni.ttf.twilightrising.common.general.GeneralHelper;
 import uni.ttf.twilightrising.common.lucas.BirbHelper;
 
 /**
@@ -10,16 +11,22 @@ import uni.ttf.twilightrising.common.lucas.BirbHelper;
  */
 public class TwilightHelper {
 	public static void preInit() {
+		GeneralHelper.preInit();
+
 		DogHelper.preInit();
 		BirbHelper.preInit();
 	}
 
 	public static void init() {
+		GeneralHelper.init();
+
 		DogHelper.init();
 		BirbHelper.init();
 	}
 
 	public static void postInit() {
+		GeneralHelper.postInit();
+
 		DogHelper.postInit();
 		BirbHelper.postInit();
 	}
