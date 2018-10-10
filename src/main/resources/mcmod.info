@@ -1,0 +1,16 @@
+[
+{
+  "modid": "twilightrising",
+  "name": "Twilight Rising",
+  "description": "Core mod for the TTF. Adds various items and utilities",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Carbon"],
+  "credits": "Infinidoge is really cool",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
