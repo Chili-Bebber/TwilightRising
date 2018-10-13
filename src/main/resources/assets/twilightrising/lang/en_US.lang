@@ -1,1 +1,7 @@
+# Items
 item.debugItem.name=Debug Item
+item.caneCrystal.name=Crystal of Reeds
+item.cactusCrystal.name=Crystal of Cacti
+
+tile.blockWoodTwilight.name=Twilight Wood
+tile.blockTwilightLeaves.name=Twilight Leaves

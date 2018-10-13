@@ -1,6 +1,6 @@
 package uni.ttf.twilightrising.common.general.items;
 
-import net.minecraft.block.BlockReed;
+import net.minecraft.block.BlockCactus;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -13,27 +13,28 @@ import uni.ttf.twilightrising.TwilightRising;
  * Created by Carbon
  * Copyright (c) Carbon 2018
  */
-public class ItemCaneCrystal extends Item {
-	private static final String unlocalized = "caneCrystal";
+public class ItemCactusCrystal extends Item {
+	private static final String unlocalized = "cactusCrystal";
 
-	public ItemCaneCrystal() {
+	public ItemCactusCrystal() {
 		setUnlocalizedName(unlocalized);
-		setTextureName(TwilightRising.MODID + ":cane_crystal");
+		setTextureName(TwilightRising.MODID + ":cactus_crystal");
 		setCreativeTab(TwilightRising.tabTwilight);
 	}
 
 	@Override
 	public boolean onItemUse(ItemStack item, EntityPlayer user, World world, int posx, int posy, int posz, int side, float px, float py, float pz) {
 		int y = posy;
-		if (world.getBlock(posx, posy, posz) instanceof BlockReed) {
+		if (world.getBlock(posx, posy, posz) instanceof BlockCactus) {
 			y++;
-			while (y <= 255 && (world.isAirBlock(posx, y, posz) || world.getBlock(posx, y, posz) instanceof BlockReed)) {
-				world.setBlock(posx, y, posz, Blocks.reeds);
+			while (y <= 255 && (world.isAirBlock(posx, y, posz) || world.getBlock(posx, y, posz) instanceof BlockCactus)) {
+				world.setBlock(posx, y, posz, Blocks.cactus);
 				y++;
 			}
 		}
 
 		item.stackSize--;
+
 		return false;
 	}
 }
