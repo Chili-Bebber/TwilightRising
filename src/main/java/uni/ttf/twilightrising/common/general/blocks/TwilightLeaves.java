@@ -1,11 +1,19 @@
 package uni.ttf.twilightrising.common.general.blocks;
 
+import com.sun.xml.internal.fastinfoset.algorithm.BuiltInEncodingAlgorithm;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockTorch;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
+import net.minecraft.command.CommandKill;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
 import uni.ttf.twilightrising.TwilightRising;
+import uni.ttf.twilightrising.core.TConfig;
 import uni.ttf.twilightrising.core.TRUtility;
 
 import java.util.Random;
@@ -26,6 +34,7 @@ public class TwilightLeaves extends Block {
 		setResistance(10000F);
 		setStepSound(soundTypeGrass);
 		setBlockName(unlocalized);
+		setTickRandomly(true);
 		setBlockTextureName(TRUtility.getTextureName(unlocalized));
 	}
 
@@ -40,17 +49,22 @@ public class TwilightLeaves extends Block {
 	}
 
 	@Override
+	@SideOnly(Side.CLIENT)
 	public void randomDisplayTick(World world, int xpar, int ypar, int zpar, Random randy) {
-		magicRunes(world, xpar, ypar, zpar, randy);
+		if(xpar % 3 == 0 && zpar % 3 == 0) {
+			magicRunes(world, xpar, ypar, zpar, randy);
+		}
 	}
 
 	private void magicRunes(World world, int x, int y, int z, Random randy) {
-		double offset = 0.0625D;
+		double offset = 0.9D; // Y offset
 
-		double rx = x + randy.nextFloat();
-		double ry = y + randy.nextFloat() - offset;
-		double rz = z + randy.nextFloat();
+		double rx = x + 0.5D + (0.5D - randy.nextDouble());
+		double ry = y - offset;
+		double rz = z + 0.5D + (0.5D - randy.nextDouble());
 
-		world.spawnParticle("enchant", rx, ry, rz, 0, 0, 0);
+		for (int i = 0; i < TConfig.TREE_PARTICLE_COUNT; i++) {
+			world.spawnParticle("enchantmenttable", rx, ry, rz, 0, 1, 0);
+		}
 	}
 }
