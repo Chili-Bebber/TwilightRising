@@ -19,7 +19,7 @@ Progress: Just started
   
 -----------------------------------------
   
-  Textures: Not Started
+  Textures: Started
   
   Compat:   Started
   
